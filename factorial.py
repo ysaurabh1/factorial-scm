@@ -1,12 +1,7 @@
-# Version 1: Iterative Factorial
+# Version 2: Recursive Factorial
 def factorial(n):
-    result = 1
-    for i in range(2, n+1):
-        result *= i
-    return result
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
 
 print("Factorial of 5 is:", factorial(5))
-
-
-Version 1: Iterative factorial
-
